@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from your version control system
-                git 'git@github.com:harsanskumaran/Day2_Jenkins.git'
+                git 'https://github.com/harsanskumaran/Day2_Jenkins.git'
             }
         }
         
