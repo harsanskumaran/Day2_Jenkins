@@ -1,16 +1,12 @@
 pipeline {
     agent any
 
-    tools {
-        // Specify the Git tool
-        git 'Git'
-    }
-
+  
     stages {
         stage('Checkout') {
             steps {
                 // Checkout the code from your version control system
-                git 'https://github.com/harsanskumaran/Day2_Jenkins.git'
+                git url: 'https://github.com/harsanskumaran/Day2_Jenkins.git'
             }
         }
         
